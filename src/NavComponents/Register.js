@@ -5,15 +5,15 @@ import {  GlobalStateContext } from "../UseContextComponents/GlobalStateProvider
 const Register = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
-    const [phone1,setPhone1] = useState('');
-    const [phone2,setPhone2] = useState('');
+    const [phone,setPhone] = useState('');
+   
     const [bootcamp,setBootCamp] = useState('');
     const { showRegisterForm, closeRegisterForm } = useContext( GlobalStateContext);
 
     return (
        
         showRegisterForm ?( <div className="fixed top-0 left-0 z-10 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
-        <div className="bg-white w-full h-max sm:w-[580px] sm:h-[518px] rounded-lg p-6 font-redhat flex flex-col space-y-4 slide-in-left" >
+        <div className="bg-white w-full h-max sm:w-[580px] sm:h-[455px] rounded-lg p-6 font-redhat flex flex-col space-y-4 slide-in-left" >
          
          <span className="text-[#545454] font-semibold text-base">REGISTER FORM</span>
          <label className="relative">
@@ -47,28 +47,16 @@ const Register = () => {
              <input
                 name="name"
                  type="number"
-                 value={phone1}
-                 onChange={(e)=>{setPhone1(e.target.value)}}
+                 value={phone}
+                 onChange={(e)=>{setPhone(e.target.value)}}
                  className=" w-full py-4 px-4 border-2 border-gray-300 rounded-lg outline-none focus:border-green-500 transition-colors duration-200"
              />
              <span className={`text-xl absolute text-gray-300 left-0
-              top-4 mx-6 px-2 transition duration-200 name ${phone1!=''?"bg-white  transform -translate-y-7 -translate-x-4 scale-75":""}`}>
+              top-4 mx-6 px-2 transition duration-200 name ${phone!=''?"bg-white  transform -translate-y-7 -translate-x-4 scale-75":""}`}>
                Phone no
              </span>
          </label>
-         <label className="relative">
-             <input
-                name="name"
-                 type="number"
-                 value={phone2}
-                 onChange={(e)=>{setPhone2(e.target.value)}}
-                 className=" w-full py-4 px-4 border-2 border-gray-300 rounded-lg outline-none focus:border-green-500 transition-colors duration-200"
-             />
-             <span className={`text-xl absolute text-gray-300 left-0
-              top-4 mx-6 px-2 transition duration-200 name ${phone2!=''?"bg-white transform -translate-y-7 -translate-x-4 scale-75":""}`}>
-                 Phone no
-             </span>
-         </label>
+        
          <label className="relative">
              <input
                 name="name"

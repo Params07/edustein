@@ -8,7 +8,7 @@ const Contact = () => {
              grid items-center space-y-4 md:space-y-0 md:space-x-4 
                py-8  px-6 md:px-[91px] md:py-[65px]">
                 <div className="items-center md:pl-16 lg:pl-0 pl-0 flex justify-center w-full  2xl:w-[30rem]">
-                    <span className="font-bold text-white text-2xl md:text-3xl lg:text-4xl">
+                    <span className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                         Are you ready to get your best career path?
                     </span>
                 </div>
