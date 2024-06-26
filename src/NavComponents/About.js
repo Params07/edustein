@@ -18,8 +18,11 @@ const About = () => {
                         </span>
                     </div>
                     <div>
-                        <span className="font-normal text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                            At Edustein, we provide Boot Camps designed to simplify your exploration of professional fields, leading you towards better clarifications through high-level understanding. Dive into visually-enhanced learning experiences that inspire creativity and fuel achievement. Join our community today to unlock your potential and journey towards a brighter future with us.
+                        <span className="font-normal text-base sm:text-xl md:text-2xl lg:text-3xl">
+                            At Edustein, we provide Boot Camps designed to simplify your exploration of professional fields, 
+                            leading you towards better clarifications through high-level understanding. Dive into visually-enhanced 
+                            learning experiences that inspire creativity and fuel achievement. Join our community today to unlock your 
+                            potential and journey towards a brighter future with us.
                         </span>
                     </div>
                 </div>

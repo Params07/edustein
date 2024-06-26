@@ -66,7 +66,7 @@ function Nav() {
     };
   }, []);  return (
     <>
-      <nav className={`fixed w-full h-16 sm:h-24 bg-white md:rounded-b-3xl px-6 md:py-6 grid items-center ${!navBar ? "rounded-b-3xl" : ""}`}>
+      <nav className={`fixed w-full h-16 sm:h-28 bg-white md:rounded-b-3xl px-6 md:py-6 grid items-center ${!navBar ? "rounded-b-3xl" : ""}`}>
         <div className="flex justify-between items-center">
           <div className="w-32 h-8  sm:w-56 sm:h-14">
             <img className="w-full h-full" src="/images/logo.png" alt="edustein" />

@@ -9,8 +9,9 @@ function ProgramsList({ programs, handleProgram, setId }) {
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className="pb-6  sm:pb-0 w-[18rem] md:w-[32rem] sm:w-[26rem] lg:w-[27rem] xl:w-[32rem] 2xl:w-[39rem]  h-[29rem] sm:h-[32rem]  
-                             lg:h-[34rem] 2xl:h-[37rem] xl:h-[35.8rem]  bg-white rounded-md md:rounded-xl p-4 xl:p-8"
+                            className=" shadow-current w-[18rem] md:w-[32rem] sm:w-[26rem] lg:w-[27rem] xl:w-[32rem] 2xl:w-[39rem] 
+                               h-[29rem] sm:h-[32.5rem]  
+                             lg:h-[34rem] 2xl:h-[37rem] xl:h-[35.8rem]  bg-white rounded-md md:rounded-xl p-4  xl:p-8"
                         >
                             <div>
                                 <span className="font-redhat font-semibold text-xl xl:text-2xl">{program.title}</span>
@@ -22,7 +23,7 @@ function ProgramsList({ programs, handleProgram, setId }) {
                             <div className="my-4 font-redhat font-normal sm:font-semibold text-sm sm:text-base text-[#44544ADE] pb-0 xl:pb-4 2xl:pb-8 ">
                                 <span>{program.content}</span>
                             </div>
-                            <div className="w-full h-8 mt-4 font-redhat">
+                            <div className="w-full  h-8 mt-4 font-redhat">
                                 <button
                                     onClick={() => {
                                         handleProgram();
