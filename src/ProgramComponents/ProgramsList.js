@@ -9,7 +9,7 @@ function ProgramsList({ programs, handleProgram, setId }) {
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className=" shadow-current w-[18rem] md:w-[32rem] sm:w-[26rem] lg:w-[27rem] xl:w-[32rem] 2xl:w-[39rem] 
+                            className=" w-[18rem] md:w-[32rem] sm:w-[26rem] lg:w-[27rem] xl:w-[32rem] 2xl:w-[39rem] 
                                h-[29rem] sm:h-[32.5rem]  
                              lg:h-[34rem] 2xl:h-[37rem] xl:h-[35.8rem]  bg-white rounded-md md:rounded-xl p-4  xl:p-8"
                         >
