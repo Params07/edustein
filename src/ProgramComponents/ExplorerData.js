@@ -62,7 +62,7 @@ function ExplorerData({ explorerData, handleProgram }) {
                             <span className="text-[#545454] font-normal text-lg sm:text-xl md:text-2xl">{explorerData.conclusion}</span>
                         </div>
                         <div className="text-center">
-                            <span className="text-navItemns font-bold text-2xl sm:text-3xl sm:text-4xl">{explorerData.slogan}</span>
+                            <span className="text-navItemns font-bold text-2xl sm:text-3xl ">{explorerData.slogan}</span>
                         </div>
                         <div className="w-full">
                             <button onClick={()=>{openRegisterForm()}} className="  border-2 border-line hover:text-line hover:bg-white text-white bg-line w-full h-12 sm:h-16 rounded-md font-bold text-lg sm:text-2xl">Register</button>

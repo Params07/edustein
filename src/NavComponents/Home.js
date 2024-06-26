@@ -1,7 +1,8 @@
 import { FaArrowRight } from "react-icons/fa";
 function Home (){
     return(
-        <div id="home" className=" section grid lg:gap-0 gap-8  pb-8  pt-28 h-full md:pt-44 lg:px-16 bg-[#0c2543]  lg:flex  lg:space-x-10 lg:h-screen w-full">
+        <div id="home" className=" section grid lg:gap-0 gap-8  pb-8  pt-28 h-full sm:pt-44 lg:px-16 bg-[#0c2543] 
+         lg:flex  lg:space-x-10 lg:h-screen w-full">
         <div className=" px-4 sm:px-16 lg:px-0 grid  gap-10 lg:gap-6  lg:w-[60%] ">
           <div className="w-max h-8">
             <span className="pl-6 pb-3 pt-3 pr-6 text-xl sm:text-2xl bg-line text-white font-redhat font-semibold rounded-l-full rounded-r-full">
@@ -34,7 +35,7 @@ function Home (){
           </div>
         </div>
         <div className="w-full  lg:w-[40%]  flex items-center justify-center  p-4 md:p-0 ">
-                <img className=" w-64 sm:w-[24rem] sm:h-[24rem]   xl:h-[85%]" src="/images/image3.png" alt="About Us Image" />
+                <img className=" object-contain w-64 sm:w-[24rem] sm:h-[24rem]   xl:h-[85%]" src="/images/image3.png" alt="About Us Image" />
             </div>
       </div>
   

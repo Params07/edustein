@@ -9,14 +9,15 @@ function ProgramsList({ programs, handleProgram, setId }) {
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className="pb-6 sm:pb-0 w-full md:w-[32rem] sm:w-4/5 lg:w-[28rem] xl:w-[30rem] 2xl:w-[34rem] h-112 h-[29rem] sm:h-[32rem]   xl:h-[34.875rem] bg-white rounded-md md:rounded-xl p-4 xl:p-8"
+                            className="pb-6 sm:pb-0 w-[18rem] md:w-[32rem] sm:w-[26rem] lg:w-[28rem] xl:w-[30rem] 2xl:w-[34rem]  h-[29rem] sm:h-[32rem]  
+                             lg:h-[33.5rem] 2xl:h-[34.875rem] bg-white rounded-md md:rounded-xl p-4 xl:p-8"
                         >
                             <div>
                                 <span className="font-redhat font-semibold text-xl xl:text-2xl">{program.title}</span>
                             </div>
-                            <div className="  w-full  h-[16rem] sm:h-[18rem] md:h-[19rem]  2xl:h-2/3 xl:h-[18rem]
+                            <div className="  w-full  h-[14.5rem] sm:h-[18rem] md:h-[19rem]  2xl:h-2/3 xl:h-[18rem]
                              flex justify-center text-[#0D2443]">
-                                <img src={program.src} className="mx-auto  h-full w-48 sm:w-[12rem]  md:w-[15rem] lg:w-[16rem] xl:w-[16rem]" alt={program.title} />
+                                <img src={program.src} className="mx-auto object-contain h-full w-48 sm:w-[12rem]  md:w-[15rem] lg:w-[16rem] xl:w-[16rem]" alt={program.title} />
                             </div>
                             <div className="my-4 font-redhat font-normal sm:font-semibold text-sm sm:text-base text-[#44544ADE]">
                                 <span>{program.content}</span>
