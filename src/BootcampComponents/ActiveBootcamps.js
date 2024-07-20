@@ -32,7 +32,65 @@ const ActiveBootcamps = () => {
         Curious about what web development really entails?
         Wondering whether this path could be for you?
         Interested in CareerFoundry's Full-Stack Web Development Program?`
-      }
+      },
+      {
+        src: "sample.webp",
+        title: "Become a Fullstack  web developer",
+        start_date: "Wed Jul 10 2024 22:23:00 GMT+0530 (India Standard Time)",
+        about: `Are you thinking about becoming a Web Developer?
+        We’ll show you how in this LIVE online info session! 
+        Curious about what web development really entails?
+        Wondering whether this path could be for you?
+        Interested in CareerFoundry's Full-Stack Web Development Program?`
+      }, {
+          src: "sample.webp",
+          title: "Become a Fullstack  web developer",
+          start_date: "Wed Jul 10 2024 22:23:00 GMT+0530 (India Standard Time)",
+          about: `Are you thinking about becoming a Web Developer?
+          We’ll show you how in this LIVE online info session! 
+          Curious about what web development really entails?
+          Wondering whether this path could be for you?
+          Interested in CareerFoundry's Full-Stack Web Development Program?`
+        }, {
+          src: "sample.webp",
+          title: "Become a Fullstack  web developer",
+          start_date: "Wed Jul 10 2024 22:23:00 GMT+0530 (India Standard Time)",
+          about: `Are you thinking about becoming a Web Developer?
+          We’ll show you how in this LIVE online info session! 
+          Curious about what web development really entails?
+          Wondering whether this path could be for you?
+          Interested in CareerFoundry's Full-Stack Web Development Program?`
+        },
+        {
+            src: "sample.webp",
+            title: "Become a Fullstack  web developer",
+            start_date: "Wed Jul 10 2024 22:23:00 GMT+0530 (India Standard Time)",
+            about: `Are you thinking about becoming a Web Developer?
+            We’ll show you how in this LIVE online info session! 
+            Curious about what web development really entails?
+            Wondering whether this path could be for you?
+            Interested in CareerFoundry's Full-Stack Web Development Program?`
+          }, {
+              src: "sample.webp",
+              title: "Become a Fullstack  web developer",
+              start_date: "Wed Jul 10 2024 22:23:00 GMT+0530 (India Standard Time)",
+              about: `Are you thinking about becoming a Web Developer?
+              We’ll show you how in this LIVE online info session! 
+              Curious about what web development really entails?
+              Wondering whether this path could be for you?
+              Interested in CareerFoundry's Full-Stack Web Development Program?`
+            }, {
+              src: "sample.webp",
+              title: "Become a Fullstack  web developer",
+              start_date: "Wed Jul 10 2024 22:23:00 GMT+0530 (India Standard Time)",
+              about: `Are you thinking about becoming a Web Developer?
+              We’ll show you how in this LIVE online info session! 
+              Curious about what web development really entails?
+              Wondering whether this path could be for you?
+              Interested in CareerFoundry's Full-Stack Web Development Program?`
+            }
+       
+   
   ];
 
   const formatDate = (dateString) => {
@@ -41,8 +99,8 @@ const ActiveBootcamps = () => {
   };
 
   return (
-    <div className='pt-28 sm:pt-34 bg-gray-300 min-h-screen h-full w-full px-8 sm:px-16'>
-      <div className='flex flex-wrap  gap-8'>
+    <div className='pt-28 sm:pt-34 bg-gray-300 min-h-screen h-full pb-10 w-full px-8 sm:px-16'>
+      <div className='flex flex-wrap justify-center gap-8'>
         {activeCamps.map((camp, index) => (
         
          <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg font-redhat">

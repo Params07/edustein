@@ -78,7 +78,7 @@ function Nav() {
 
   return (
     <>
-      <nav className={`fixed w-full h-16 sm:h-20 md:rounded-b-3xl px-6 md:py-6 grid items-center ${!navBar ? "rounded-b-3xl" : ""} ${isScrolled ? 'bg-white bg-opacity-75' : 'bg-white'}`}>
+      <nav className={`fixed w-full h-16 sm:h-20 md:rounded-b-3xl px-6 md:py-6 grid items-center ${!navBar ? "rounded-b-3xl" : ""} ${isScrolled && !navBar ? 'bg-white bg-opacity-75' : 'bg-white'}`}>
         <div className="flex justify-between items-center">
           <div className="w-32 h-8 sm:w-42 sm:h-10">
             <img className="w-full h-full object-contain" src="/images/logo.png" alt="edustein" />
@@ -89,8 +89,8 @@ function Nav() {
             </div>
           </div>
           <div
-            className={`pb-5 absolute md:pr-4 left-0 top-16 min-h-84 w-full  grid space-y-8 md:static md:flex  bg-opacity-75' }
-            md:space-y-0 md:space-x-10 lg:space-x-14 md:h-4 md:w-auto font-redhat text-base font-semibold ${navBar ? 'block' : 'hidden'}`}
+            className={`pb-5 absolute md:pr-4 left-0 top-16 min-h-84 w-full  grid space-y-8 md:static md:flex   ${isScrolled && !navBar ? ' bg-opacity-75' : 'bg-white'} 
+        md:space-y-0 md:space-x-10 lg:space-x-14 md:h-4 md:w-auto font-redhat text-base font-semibold ${navBar ? 'block ' : 'hidden'}`}
           >
             {navItems.map((item) => (
               <Link to={`/`} key={item.id}>
