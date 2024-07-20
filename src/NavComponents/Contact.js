@@ -65,7 +65,7 @@ const Contact = () => {
  <div className="p-4 lg:p-2 bg-white">
  <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-400 to-transparent dark:via-gray-600"></div>
  </div>
-  <div className="bg-white font-redhat text-[44544A] text-center font-semibold pt-2 pb-4">
+  <div className="bg-white font-redhat text-[44544A] text-center text-sm font-semibold pt-2 pb-4">
         <span>copyrights <span>&copy;</span> 2024 Edustein. All rights reserved</span>
        </div>
 </div>
