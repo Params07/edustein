@@ -22,12 +22,13 @@ function App() {
                 <Program />
                 <About />
                 <Contact />
-                <Register />
+               
               </div>
             }
           />
           <Route path="/activecamps" element={<ActiveBootcamps />} />
         </Routes>
+        <Register />
       </Router>
   </GlobalStateProvider>
   );
