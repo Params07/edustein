@@ -6,17 +6,30 @@ import Program from './NavComponents/Program.js';
 import About from './NavComponents/About.js';
 import { GlobalStateProvider } from './UseContextComponents/GlobalStateProvider.js';
 import Home from './NavComponents/Home.js';
-
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import ActiveBootcamps from './BootcampComponents/ActiveBootcamps.js'
 function App() {
   return (
-   <GlobalStateProvider>
-     <Nav/>
-     <Home/>
-    <Program/>
-    <About/>
-    <Contact/>
-    <Register/>
-   </GlobalStateProvider>
+    <GlobalStateProvider>
+     <Router>
+        <Nav />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Home />
+                <Program />
+                <About />
+                <Contact />
+                <Register />
+              </div>
+            }
+          />
+          <Route path="/activecamps" element={<ActiveBootcamps />} />
+        </Routes>
+      </Router>
+  </GlobalStateProvider>
   );
 }
 

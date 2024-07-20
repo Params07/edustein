@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Home (){
     return(
         <div id="home" className=" section grid lg:gap-0 gap-8  pb-8  pt-28 h-full sm:pt-44 lg:px-16 bg-[#0c2543] 
@@ -28,8 +29,8 @@ function Home (){
               <span className="font-redhat font-semibold md:font-bold text-2xl text-navItems flex-grow text-center">
                 Be an EduStein
               </span>
-              <span className="ml-auto bg-line rounded-full h-10 w-10 md:h-14 md:w-14 text-2xl font-semibold grid place-items-center">
-                <FaArrowRight />
+              <span className="ml-auto bg-line rounded-full h-10 w-10 md:h-14 md:w-14 text-2xl font-semibold grid place-items-center cursor-pointer">
+                <Link to="/activecamps"><FaArrowRight /> </Link>
               </span>
             </div>
           </div>
